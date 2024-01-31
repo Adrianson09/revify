@@ -5,16 +5,45 @@ import BentoItem from './BentoItem.astro'
 <section
     class={`
     w-full max-w-[1400px]
-    grid grid-cols-10 auto-rows-[35rem] gap-4
-    mx-autp p-20
+    grid grid-cols-10 auto-rows-[25rem] gap-4
+    mx-auto p-20
     `}
 >
-    <BentoItem title="Conectividad Segura"/>
-    <BentoItem title="Servicios Administrados"/>
-    <BentoItem title="Nube Segura"/>
-    <BentoItem title="Infraestructura Empresarial"/>
-    <BentoItem title="Soluciones de Software"/>
+    <BentoItem 
+    class="col-span-10 md:col-span-4" 
+    title="Conectividad Segura"
+    >
+    <div
+        slot="image"
+        class="absolute left-0 top-0 bottom-0 w-full object-cover object-center
+        h-full group-hover:scale-110 transition-scale duration-1000
+        ease-in-out opacity-90 bg-center bg-cover bg-no-repeat bg-red-700"
+        style="background-image: url('/internet.jpg')"
+    >
+    </div>
+    
+    <p slot="content" class="max-w-xl"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Recusandae aliquid corrupti aut, voluptas harum architecto molestiae perspiciatis 
+         dolore adipisci libero in nisi, asperiores illo unde similique autem commodi cupiditate iusto?
+        </p>
+    </BentoItem>
+    <BentoItem class="col-span-10 md:col-span-6" title="Servicios Administrados">
+        <p slot="content" class="max-w-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aliquid corrupti aut, voluptas harum architecto molestiae perspiciatis dolore adipisci libero in nisi, asperiores illo unde similique autem commodi cupiditate iusto?</p>
 
+    </BentoItem>
+    <BentoItem class="col-span-10 md:col-span-6" title="Nube Segura">
+        <p slot="content" class="max-w-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aliquid corrupti aut, voluptas harum architecto molestiae perspiciatis dolore adipisci libero in nisi, asperiores illo unde similique autem commodi cupiditate iusto?</p>
+
+    </BentoItem>
+    <BentoItem class="col-span-10 md:col-span-4" title="Infraestructura Empresarial">
+        <p slot="content" class="max-w-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aliquid corrupti aut, voluptas harum architecto molestiae perspiciatis dolore adipisci libero in nisi, asperiores illo unde similique autem commodi cupiditate iusto?</p>
+
+    </BentoItem>
+    <BentoItem class="col-span-10 md:col-span-6" title="Soluciones de Software">
+        <p slot="content" class="max-w-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aliquid corrupti aut, voluptas harum architecto molestiae perspiciatis dolore adipisci libero in nisi, asperiores illo unde similique autem commodi cupiditate iusto?</p>
+
+    </BentoItem>
+ 
     
 
 </section>

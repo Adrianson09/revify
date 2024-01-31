@@ -10,13 +10,23 @@ const {title, subtitle} = Astro.props
 
 <article class={`
 ${Astro.props.class}
+col-span-5
 relative rounded-xl
 backdrop-blur-md
 border border-black/10
 shadow-inner shadow-white/10
+group
 
 `}
 >
-    <h2>{title}</h2>
-    {subtitle && <h3>{subtitle}</h3>}
+    <!-- FadeIN -->
+
+    <slot name="image"></slot>
+    <div class="select-none flex flex-col gap-1 p-6 text-lg z-20 justify-end h-full">
+
+        <h2 class="font-semibold text-3xl text-balance text-white mb-4">{title}</h2>
+        {subtitle && <h3 class="font-semibold text-3xl text-sky-200/80 -mt-4 mb-4">{subtitle}</h3>}
+        
+        <slot name="content"></slot>
+    </div>
 </article>

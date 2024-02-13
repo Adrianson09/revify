@@ -17,12 +17,12 @@ import BentoItem from './BentoItem.astro'
         slot="image"
         class="absolute left-0 top-0 bottom-0 w-full 
         h-full group-hover:scale-110 transition-scale duration-1000
-        ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat  -z-10 "
+        ease-in-out opacity-20 sm:opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat bg-blue-900 sm:bg-transparent -z-10 "
         style="background-image: url('/conect.png') "
     >
     </div>
     
-    <p slot="content" class="max-w-xl">Nos especializamos en proporcionar conexiones confiables y de alta velocidad, asegurando que su empresa opere sin interrupciones. Desde redes cableadas hasta soluciones inalámbricas, garantizamos una conectividad que impulsa la eficiencia.
+    <p slot="content" class="max-w-xl sm:">Nos especializamos en proporcionar conexiones confiables y de alta velocidad, asegurando que su empresa opere sin interrupciones. Desde redes cableadas hasta soluciones inalámbricas, garantizamos una conectividad que impulsa la eficiencia.
         </p>
     </BentoItem>
     <BentoItem class="col-span-10 md:col-span-6" title="Servicios Administrados">
@@ -30,7 +30,7 @@ import BentoItem from './BentoItem.astro'
         slot="image"
         class="absolute left-0 top-0 bottom-0 w-full 
         h-full group-hover:scale-110 transition-scale duration-1000
-        ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat  -z-10 "
+        ease-in-out opacity-10 sm:opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat bg-blue-900 sm:bg-transparent  -z-10 "
         style="background-image: url('/servicios.png') "
     >
     </div>
@@ -42,7 +42,7 @@ import BentoItem from './BentoItem.astro'
         slot="image"
         class="absolute left-0 top-0 bottom-0 w-full 
         h-full group-hover:scale-110 transition-scale duration-1000
-        ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat  -z-10 "
+        ease-in-out opacity-10 sm:opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat bg-blue-900 sm:bg-transparent  -z-10 "
         style="background-image: url('/internet.png') "
     >
     </div>
@@ -54,26 +54,31 @@ import BentoItem from './BentoItem.astro'
         slot="image"
         class="absolute left-0 top-0 bottom-0 w-full 
         h-full group-hover:scale-110 transition-scale duration-1000
-        ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat  -z-10 "
+        ease-in-out opacity-10 sm:opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat bg-blue-900 sm:bg-transparent -z-10 "
         style="background-image: url('/infraestructura.png') "
     >
     </div>
         <p slot="content" class="max-w-xl"> Diseñamos y implementamos una infraestructura robusta y escalable para respaldar el crecimiento de su empresa. Desde servidores hasta sistemas de almacenamiento, creamos bases sólidas que sustentan el éxito a largo plazo.</p>
 
     </BentoItem>
-    <BentoItem class="col-span-10 md:col-span-6" title="Soluciones de Software">
+    <BentoItem class="col-span-10  md:col-span-6" title="Soluciones de Software">
+        
         <div
         slot="image"
         class="absolute left-0 top-0 bottom-0 w-full 
         h-full group-hover:scale-110 transition-scale duration-1000
-        ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat -z-10 "
+        ease-in-out opacity-10 sm:opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat bg-blue-900 sm:bg-transparent  -z-10 "
         style="background-image: url('/software.png') "
     >
     </div>
-        <p slot="content" class="max-w-xl">Desarrollamos aplicaciones y programas personalizados que se adaptan a las necesidades específicas de su empresa. Desde la automatización de procesos hasta herramientas de análisis, nuestras soluciones de software optimizan la productividad y mejoran la eficiencia operativa.</p>
+        <p slot="content" class=" max-w-xl">Desarrollamos aplicaciones y programas personalizados que se adaptan a las necesidades específicas de su empresa. Desde la automatización de procesos hasta herramientas de análisis, nuestras soluciones de software optimizan la productividad y mejoran la eficiencia operativa.</p>
 
     </BentoItem>
  
     
 
 </section>
+
+<style>
+
+</style>

@@ -1,5 +1,8 @@
 ---
 import Logo from "./Logo.astro";
+import { getI18n } from '../i18n/'
+const { currentLocale } = Astro
+const i18n = getI18n({ currentLocale })
 ---
 
 <section class="text-xl text-left px-20 max-w-[80ch] text-pretty mx-auto my-24">
@@ -8,31 +11,21 @@ import Logo from "./Logo.astro";
     class="w-48 text-white m-auto mb-10"
     />
     <h1 class=" text-5xl fond-semibold text-center text-wrap mx-auto mb-10 tracking-wide">
-        Bienvenidos a Revify
+        {i18n.INTRO_TITLE}
     </h1>
-    <p>
-        Por más de <strong>10 años hemos interconectado
-a nuestros usuarios</strong> por medio de un servicio
-con los más altos estándares de calidad.
+    <p set:html={i18n.INTRO_DESC1}>
+        
 </p>
-<p>
-Nuestra atención personalizada, soporte y
-equipos con <strong>tecnología de punta</strong>, permiten a
-los negocios comerciales, empresas corporativas y
-hogares prosperar con éxito.
+<p set:html={i18n.INTRO_DESC2}>
+
 </p>
-<p>
-Ayudamos a los usuarios a vivir y trabajar
-con mayor <strong> confianza, efectividad y seguridad</strong>,
-facilitando así sus tareas digitales.
+<p set:html={i18n.INTRO_DESC3}>
+
 </p>
-<p>
-La estabilidad y conocimiento en<strong> nuestros servicios,
-son pilares fundamentales</strong> para establecer
-relaciones duraderas con nuestros clientes.
+<p set:html={i18n.INTRO_DESC4}>
+
 </p>
-<p>
-Creemos en el desarrollo y la comunidad
-como<strong> generadores de conectividad.</strong>
+<p set:html={i18n.INTRO_DESC5}>
+
     </p>
 </section>

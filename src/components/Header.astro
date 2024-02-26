@@ -9,14 +9,14 @@ const { currentLocale } = Astro
 
 ---
 
-<header id="header-nav" class="fixed top-0 w-full px-6 py-4 z-50">
-  <div class="max-w-7xl mx-auto flex items-center justify-between gap-16">
+<header id="header-nav" class="fixed w-screen py-4  z-50  top-0 px-8 lg:px-0">
+  <div class="max-w-7xl mx-auto flex items-center justify-between gap-8">
     
       <!-- <Logo
         class="absolute w-10 m-auto blur-sm opacity-0 transition-opacity duration-300 hover:opacity-100"
       /> -->
-      <a href="/" class="col-span-2" >
-        <Logo class="w-10" />
+      <a href="/" class="col-span-1" >
+        <Logo class="w-14 h-auto" />
       
       </a>
   
@@ -24,8 +24,18 @@ const { currentLocale } = Astro
       id="header-menu"
       class="fixed w-full h-dvh inset-0 bg-[#151a36]/90 text-2xl flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-300 target:translate-y-0 md:static md:h-[initial] md:bg-[initial] md:text-xl md:flex-row md:translate-y-[initial]"
     >
-    <li>Nosotros</li>
-    <li>Servicios</li>
+    <ul class="flex  gap-4">
+
+      <li>
+        <a class="hover:underline" href="#nosotros">Nosotros</a>
+      </li>
+      <li>
+        <a class="hover:underline" href="#servicios"> Servicios</a>
+      </li>
+      <li>
+        <a class="hover:underline" href="#contacto"> Contacto</a>
+      </li>
+    </ul>
       <!-- <HeaderLink class="text__glowing" href={translatePath('/vota/')}>
         {t('nav.vota')}
       </HeaderLink>
@@ -45,6 +55,11 @@ const { currentLocale } = Astro
       <a href="#header-nav" class="md:hidden absolute top-6 right-6">
         <CloseIcon />
       </a> -->
+      <button class="md:py-2 md:ml-auto md:text-base lg:text-base" >Idioma</button>
+     
+      <a href="#header-nav" class="md:hidden absolute top-6 right-6">
+        x
+      </a> 
     </nav>
     <!-- <a href="#header-menu" class="md:hidden"><MenuIcon /></a> -->
     <a href="#header-menu" class="md:hidden">Menu</a>

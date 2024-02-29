@@ -1,84 +1,135 @@
 ---
-import BentoItem from './BentoItem.astro'
+import BentoItem from "@/components/BentoItem.astro"
+import { getI18N } from "@/i18n/"
+
+const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
 ---
 
 <section
-    class={`
+id="servicios"
+  class={`
     w-full max-w-[1400px]
-    grid sm:grid-cols-10  auto-rows-[30rem] gap-4
-    mx-auto p-20
-    `}
+    grid lg:grid-cols-10 auto-rows-[30rem] gap-4
+    mx-auto p-6 md:p-12 lg:p-20
+  `}
 >
-    <BentoItem 
-    class="col-span-10 md:col-span-4" 
-    title="Conectividad Robusta"
-    >
+  <BentoItem class="col-span-10 lg:col-span-4" title={i18n.BENTO_TITLE_1}>
     <div
-        slot="image"
-        class="absolute left-0 top-0 bottom-0 w-full 
-        h-full group-hover:scale-110 transition-scale duration-1000
-        ease-in-out opacity-20 sm:opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat bg-blue-900 sm:bg-transparent -z-10 "
-        style="background-image: url('/conect.png') "
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950 sm:bg-transparent opacity-30 sm:opacity-60
+        bg-cover bg-center bg-no-repeat  bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      data-src="/conect.png"
     >
     </div>
+
+    <p
+      slot="content"
+      class="max-w-xl text-base md:text-lg"
+      set:html={i18n.BENTO_CONTENT_1}
+    />
+  </BentoItem>
+  <BentoItem
+    class="col-span-10 lg:col-span-6"
+    title={i18n.BENTO_TITLE_2}
     
-    <p slot="content" class="max-w-xl sm:">Nos especializamos en proporcionar conexiones confiables y de alta velocidad, asegurando que su empresa opere sin interrupciones. Desde redes cableadas hasta soluciones inalámbricas, garantizamos una conectividad que impulsa la eficiencia.
-        </p>
-    </BentoItem>
-    <BentoItem class="col-span-10 md:col-span-6" title="Servicios Administrados">
-        <div
-        slot="image"
-        class="absolute left-0 top-0 bottom-0 w-full 
-        h-full group-hover:scale-110 transition-scale duration-1000
-        ease-in-out opacity-10 sm:opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat bg-blue-900 sm:bg-transparent  -z-10 "
-        style="background-image: url('/servicios.png') "
+  >
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full bg-blue-800 sm:bg-transparent opacity-30 sm:opacity-90
+    bg-cover bg-center bg-no-repeat  bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      data-src="/servicios.png"
     >
     </div>
-        <p slot="content" class="max-w-xl">Simplificamos la gestión de su entorno IT. Con monitoreo proactivo, soporte técnico y actualizaciones regulares, nuestros servicios administrados permiten que se enfoque en su negocio mientras cuidamos de su infraestructura tecnológica.</p>
-
-    </BentoItem>
-    <BentoItem class="col-span-10 md:col-span-6" title="Nube Segura">
-        <div
-        slot="image"
-        class="absolute left-0 top-0 bottom-0 w-full 
-        h-full group-hover:scale-110 transition-scale duration-1000
-        ease-in-out opacity-10 sm:opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat bg-blue-900 sm:bg-transparent  -z-10 "
-        style="background-image: url('/internet.png') "
+    <p
+      slot="content"
+      class="max-w-xl text-base md:text-lg"
+      set:html={i18n.BENTO_CONTENT_2}
+    />
+  </BentoItem>
+  <BentoItem
+    class="col-span-10 lg:col-span-6"
+    title={i18n.BENTO_TITLE_3}
+  >
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-900 sm:bg-transparent opacity-30 sm:opacity-90
+        bg-cover bg-center bg-no-repeat  bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      data-src="/internet.png"
     >
     </div>
-        <p slot="content" class="max-w-xl">Transforme su almacenamiento y procesamiento de datos con nuestra nube segura. Ofrecemos soluciones escalables que protegen su información mediante protocolos avanzados de seguridad, permitiéndole acceder a sus recursos desde cualquier lugar.</p>
-
-    </BentoItem>
-    <BentoItem class="col-span-10 md:col-span-4" title="Infraestructura Empresarial">
-        <div
-        slot="image"
-        class="absolute left-0 top-0 bottom-0 w-full 
-        h-full group-hover:scale-110 transition-scale duration-1000
-        ease-in-out opacity-10 sm:opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat bg-blue-900 sm:bg-transparent -z-10 "
-        style="background-image: url('/infraestructura.png') "
+    <p
+      slot="content"
+      class="max-w-xl text-base md:text-lg"
+      set:html={i18n.BENTO_CONTENT_3}
+    />
+  </BentoItem>
+  <BentoItem class="col-span-10 lg:col-span-4" title={i18n.BENTO_TITLE_4}>
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950 sm:bg-transparent opacity-30 sm:opacity-90
+        bg-cover bg-center bg-no-repeat  bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      data-src="/infraestructura.png"
     >
     </div>
-        <p slot="content" class="max-w-xl"> Diseñamos y implementamos una infraestructura robusta y escalable para respaldar el crecimiento de su empresa. Desde servidores hasta sistemas de almacenamiento, creamos bases sólidas que sustentan el éxito a largo plazo.</p>
-
-    </BentoItem>
-    <BentoItem class="col-span-10  md:col-span-6" title="Soluciones de Software">
-        
-        <div
-        slot="image"
-        class="absolute left-0 top-0 bottom-0 w-full 
-        h-full group-hover:scale-110 transition-scale duration-1000
-        ease-in-out opacity-10 sm:opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat bg-blue-900 sm:bg-transparent  -z-10 "
-        style="background-image: url('/software.png') "
+    <p
+      slot="content"
+      class="max-w-xl text-base md:text-lg"
+      set:html={i18n.BENTO_CONTENT_4}
+    />
+  </BentoItem>
+  <BentoItem class="col-span-10 lg:col-span-10" title={i18n.BENTO_TITLE_5}>
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950 sm:bg-transparent opacity-30 sm:opacity-90
+        bg-cover bg-center bg-no-repeat  bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      data-src="/software.png"
     >
     </div>
-        <p slot="content" class=" max-w-xl">Desarrollamos aplicaciones y programas personalizados que se adaptan a las necesidades específicas de su empresa. Desde la automatización de procesos hasta herramientas de análisis, nuestras soluciones de software optimizan la productividad y mejoran la eficiencia operativa.</p>
-
-    </BentoItem>
- 
-    
-
+    <p
+      slot="content"
+      class="max-w-xl text-base md:text-lg"
+      set:html={i18n.BENTO_CONTENT_5}
+    />
+  </BentoItem>
 </section>
 
-<style>
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const backgrounds = document.querySelectorAll(
+      ".background"
+    ) as NodeListOf<HTMLElement>
 
-</style>
+    if (window.IntersectionObserver == null) {
+      backgrounds.forEach((bkg) => {
+        bkg.style.backgroundImage = "url('" + bkg.dataset.src + "')"
+      })
+      return
+    }
+
+    function handleIntersection(entries: IntersectionObserverEntry[]) {
+      entries.map((entry) => {
+        if (entry.isIntersecting) {
+          const target = entry.target as HTMLElement
+          const { style, dataset } = target
+          // Item has crossed our observation
+          // threshold - load src from data-src
+          style.backgroundImage = "url('" + dataset.src + "')"
+          // Job done for this item - no need to watch it!
+          observer.unobserve(entry.target)
+        }
+      })
+    }
+
+    const observer = new IntersectionObserver(handleIntersection, {
+      rootMargin: "100px",
+    })
+
+    backgrounds.forEach((bkg) => observer.observe(bkg))
+  })
+</script>

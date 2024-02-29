@@ -1,10 +1,46 @@
 {
-    "SEO_TITLE": "Revify - The Best Technology Service Provider in Costa Rica",
-    "SEO_DESCRIPTION": "We are a strategic partner committed to revolutionizing the way we provide technology services to our corporate, commercial, and residential allies, establishing continuous progress with excellent results.",
-    "INTRO_TITLE": "Welcome to Revify",
-    "INTRO_DESC1": "For over <strong>10 years, we have interconnected our users</strong> through a service with the highest quality standards.",
-    "INTRO_DESC2": "Our personalized attention, support, and teams with <strong>cutting-edge technology</strong> enable commercial businesses, corporate enterprises, and homes to thrive successfully.",
-    "INTRO_DESC3": "We help users live and work with greater <strong>confidence, effectiveness, and security</strong>, thereby facilitating their digital tasks.",
-    "INTRO_DESC4": "Stability and expertise in <strong>our services are fundamental pillars</strong> for establishing lasting relationships with our clients.",
-    "INTRO_DESC5": "We believe in development and community as <strong>generators of connectivity.</strong>"
-    }
+	"SEO_TITLE_1": "Revify ",
+	"SEO_TITLE_2": "- The Best Technology Service Provider in Costa Rica",
+	"SEO_DESCRIPTION": "We are a strategic partner committed to revolutionizing the way we provide technology services to our corporate, commercial, and residential allies, establishing continuous progress with excellent results.",
+	"SEO": {
+		"ERROR_404_TITLE": "404 Page not found - Revify",
+		"ERROR_404_DESCRIPTION": "Page not found (Error 404). Check the URL or explore our sections. Need help? Contact us."
+	},
+	"HERO_SUBTITLE": "Revolutionize Together",
+	"INTRO_TITLE": "Welcome",
+	"INTRO_TITLE_AFTER_BR": "to Revify",
+	"INTRO_DESCRIPTION_1": "For over <strong>10 years, we have interconnected our users</strong> through a service with the highest quality standards.",
+	"INTRO_DESCRIPTION_2": "Our personalized attention, support, and teams with <strong>cutting-edge technology</strong> enable commercial businesses, corporate enterprises, and homes to thrive successfully.",
+	"INTRO_DESCRIPTION_3": "We help users live and work with greater <strong>confidence, effectiveness, and security</strong>, thereby facilitating their digital tasks.",
+	"INTRO_DESCRIPTION_4": "Stability and expertise in <strong>our services are fundamental pillars</strong> for establishing lasting relationships with our clients.",
+	"INTRO_DESCRIPTION_5": "We believe in development and community as <strong>generators of connectivity.</strong>",
+	"BENTO_TITLE_1": "Robust Connectivity",
+	"BENTO_CONTENT_1": "We specialize in providing reliable and high-speed connections, ensuring that your company operates without interruptions. From wired networks to wireless solutions, we guarantee connectivity that drives efficiency.",
+	"BENTO_TITLE_2": "Managed Services",
+	"BENTO_CONTENT_2": "We simplify the management of your IT environment. With proactive monitoring, technical support, and regular updates, our managed services allow you to focus on your business while we take care of your technological infrastructure.",
+	"BENTO_TITLE_3": "Secure Cloud",
+	"BENTO_CONTENT_3": "Transform your data storage and processing with our secure cloud. We offer scalable solutions that protect your information with advanced security protocols, allowing you to access your resources from anywhere.",
+	"BENTO_TITLE_4": "Enterprise Infrastructure",
+	"BENTO_CONTENT_4": "We design and implement a robust and scalable infrastructure to support your company's growth. From servers to storage systems, we create solid foundations that sustain long-term success.",
+	"BENTO_TITLE_5": "Software Solutions",
+	"BENTO_CONTENT_5": "We develop custom applications and programs that adapt to the specific needs of your company. From process automation to analytical tools, our software solutions optimize productivity and improve operational efficiency.",
+	
+	"CONTACT": "Contact Us!",
+	"CONTACT_CONTENT": "Complete the contact form below or use the provided contact information to get in touch with our team.",
+	
+
+	"NAME": "Name",
+	"PHONE": "Phone",
+	"MESSAGE": "Message",
+	"SEND": "Send",
+
+	"FOOTER": {
+		"DISCLAIMER": "All rights reserved. ",
+		"CONTENT": "Revolutionizing your company with comprehensive technological solutions. We are your IT ally to achieve your goals."
+		
+	},
+		"ERROR_404": {
+		"TITLE": "Page not found",
+		"BACK_HOMEPAGE_BTN": "Back to homepage"
+	}
+}

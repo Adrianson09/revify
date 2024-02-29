@@ -1,31 +1,24 @@
 ---
-import Logo from "./Logo.astro";
-import { getI18n } from '../i18n/'
+import Logo from "@/components/Logo.astro"
+
+import { getI18N } from "@/i18n/index"
+
 const { currentLocale } = Astro
-const i18n = getI18n({ currentLocale })
+const i18n = getI18N({ currentLocale })
 ---
 
-<section class="text-xl text-left px-20 max-w-[80ch] text-pretty mx-auto my-24">
-    <!-- <img class="w-16 mb-10 mx-auto" src="/favicon.svg" alt="logo revify"> -->
-    <Logo
-    class="w-48 text-white m-auto mb-10"
-    />
-    <h1 class=" text-5xl fond-semibold text-center text-wrap mx-auto mb-10 tracking-wide">
-        {i18n.INTRO_TITLE}
-    </h1>
-    <p set:html={i18n.INTRO_DESC1}>
-        
-</p>
-<p set:html={i18n.INTRO_DESC2}>
-
-</p>
-<p set:html={i18n.INTRO_DESC3}>
-
-</p>
-<p set:html={i18n.INTRO_DESC4}>
-
-</p>
-<p set:html={i18n.INTRO_DESC5}>
-
-    </p>
+<section id="nosotros"
+  class="relative z-10 mx-auto my-24 max-w-[70ch] text-pretty px-6 text-left text-xl sm:px-20"
+>
+  <Logo class="m-auto mb-10 h-auto w-16 text-white" />
+  <h1
+    class="mx-auto mb-10 text-wrap text-center text-4xl font-semibold tracking-wide"
+  >
+    {i18n.INTRO_TITLE}<br />{i18n.INTRO_TITLE_AFTER_BR}
+  </h1>
+  <p set:html={i18n.INTRO_DESCRIPTION_1} />
+  <p set:html={i18n.INTRO_DESCRIPTION_2} />
+  <p set:html={i18n.INTRO_DESCRIPTION_3} />
+  <p set:html={i18n.INTRO_DESCRIPTION_4} />
+  <p set:html={i18n.INTRO_DESCRIPTION_5} />
 </section>

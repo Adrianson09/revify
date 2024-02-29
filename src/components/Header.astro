@@ -1,67 +1,55 @@
 ---
-import Logo from "./Logo.astro";
+import Logo from "@/components/Logo.astro"
+
+import LanguageSelector from "@/components/LanguageSelector.astro"
+import HeaderLink from "@/components/HeaderLink.astro"
+
+import MenuIcon from "@/components/icons/Menu.astro"
+import CloseIcon from "@/components/icons/Close.astro"
+
+import { getI18N } from "@/i18n/index"
+import { getLangFromUrl, useTranslations, useTranslatedPath, } from '../i18n/utils';
 
 const { currentLocale } = Astro
+const i18n = getI18N({ currentLocale })
 
-
-
-
-
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const translatePath = useTranslatedPath(lang);
 ---
 
-<header id="header-nav" class="fixed w-screen py-4  z-50  top-0 px-8 lg:px-0">
-  <div class="max-w-7xl mx-auto flex items-center justify-between gap-8">
-    
-      <!-- <Logo
-        class="absolute w-10 m-auto blur-sm opacity-0 transition-opacity duration-300 hover:opacity-100"
-      /> -->
-      <a href="/" class="col-span-1" >
-        <Logo class="w-14 h-auto" />
-      
-      </a>
-  
+<header id="header-nav" class="fixed top-0 w-full px-6 py-4 z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between gap-16">
+    <HeaderLink
+      checkActive={false}
+      href={translatePath('/')}
+      class="relative z-10"
+      aria-label="Logo Revify"
+    >
+      <Logo
+        class="absolute w-12 m-auto blur-sm opacity-0 transition-opacity duration-300 hover:opacity-100"
+      />
+      <Logo class="w-10" />
+    </HeaderLink>
     <nav
       id="header-menu"
-      class="fixed w-full h-dvh inset-0 bg-[#151a36]/90 text-2xl flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-300 target:translate-y-0 md:static md:h-[initial] md:bg-[initial] md:text-xl md:flex-row md:translate-y-[initial]"
+      class="fixed w-full h-dvh inset-0 bg-[#151a36]/90 md:text-xl lg:text-xl flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-300 target:translate-y-0 md:static md:h-[initial] md:bg-[initial] md:flex-row md:translate-y-[initial]"
     >
-    <ul class="flex  gap-4">
-
-      <li>
-        <a class="hover:underline" href="#nosotros">Nosotros</a>
-      </li>
-      <li>
-        <a class="hover:underline" href="#servicios"> Servicios</a>
-      </li>
-      <li>
-        <a class="hover:underline" href="#contacto"> Contacto</a>
-      </li>
-    </ul>
-      <!-- <HeaderLink class="text__glowing" href={translatePath('/vota/')}>
-        {t('nav.vota')}
+      <HeaderLink class="text__glowing" href={translatePath('#nosotros')}>
+        {t('nav.nosotros')}
       </HeaderLink>
-      <HeaderLink class="text__glowing" href={translatePath('/info/')}>
-        {t('nav.info')}
+      <HeaderLink class="text__glowing" href={translatePath('#servicios')}>
+        {t('nav.servicios')}
       </HeaderLink>
-      <HeaderLink class="text__glowing" href={translatePath('/archivo/')}>
-        {t('nav.archivo')}
+      <HeaderLink class="text__glowing" href={translatePath('#contacto')}>
+        {t('nav.contacto')}
       </HeaderLink>
       <LanguageSelector />
-      <Button
-        className="md:py-2 md:ml-auto md:text-base lg:text-base"
-        url="https://drive.google.com/file/d/1D7IvIqMyqAoG58fuk8bc0JvhAmrWBbOK/view"
-      >
-        {i18n.HEADER_BUTTON}
-      </Button>
-      <a href="#header-nav" class="md:hidden absolute top-6 right-6">
-        <CloseIcon />
-      </a> -->
-      <button class="md:py-2 md:ml-auto md:text-base lg:text-base" >Idioma</button>
      
       <a href="#header-nav" class="md:hidden absolute top-6 right-6">
-        x
-      </a> 
+        <CloseIcon />
+      </a>
     </nav>
-    <!-- <a href="#header-menu" class="md:hidden"><MenuIcon /></a> -->
-    <a href="#header-menu" class="md:hidden">Menu</a>
+    <a href="#header-menu" class="md:hidden"><MenuIcon /></a>
   </div>
 </header>

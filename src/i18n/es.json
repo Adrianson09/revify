@@ -1,10 +1,48 @@
 {
-    "SEO_TITLE": "Revify - El mejor Proveedor de servicios tecnológicos en Costa Rica",
-    "SEO_DESCRIPTION": "Somos un socio estratégico comprometido con revolucionar la manera en que brindamos servicios tecnológicos a nuestros aliados corporativos, comerciales y residenciales, estableciendo un progreso continuo con excelentes resultados.",
-    "INTRO_TITLE": "Bienvenidos a Revify",
-    "INTRO_DESC1": "Por más de <strong>10 años hemos interconectado a nuestros usuarios</strong> por medio de un servicio con los más altos estándares de calidad.",
-    "INTRO_DESC2":"Nuestra atención personalizada, soporte y equipos con <strong>tecnología de punta</strong>, permiten a los negocios comerciales, empresas corporativas y hogares prosperar con éxito.",
-    "INTRO_DESC3": "Ayudamos a los usuarios a vivir y trabajar con mayor <strong> confianza, efectividad y seguridad</strong>, facilitando así sus tareas digitales.",
-    "INTRO_DESC4": "La estabilidad y conocimiento en<strong> nuestros servicios, son pilares fundamentales</strong> para establecer relaciones duraderas con nuestros clientes.",
-    "INTRO_DESC5":"Creemos en el desarrollo y la comunidad como<strong> generadores de conectividad.</strong>"
+	"SEO_TITLE_1": "Revify ",
+	"SEO_TITLE_2": "- El mejor Proveedor de servicios tecnológicos en Costa Rica",
+	"SEO_DESCRIPTION": "Somos un socio estratégico comprometido con revolucionar la manera en que brindamos servicios tecnológicos a nuestros aliados corporativos, comerciales y residenciales, estableciendo un progreso continuo con excelentes resultados.",
+	"SEO": {
+		"ERROR_404_TITLE": "404 Página no encontrada - Revify",
+		"ERROR_404_DESCRIPTION": "Página no encontrada (Error 404). Verifica la URL o explora nuestras secciones. ¿Necesitas ayuda? Contáctenos."
+	},
+	"HERO_SUBTITLE": "Revolucionar Juntos",
+	"INTRO_TITLE": "Bienvenidos/as",
+	"INTRO_TITLE_AFTER_BR": "a Revify",
+	"INTRO_DESCRIPTION_1": "Por más de <strong>10 años hemos interconectado a nuestros usuarios</strong> por medio de un servicio con los más altos estándares de calidad.",
+	"INTRO_DESCRIPTION_2": "Nuestra atención personalizada, soporte y equipos con <strong>tecnología de punta</strong>, permiten a los negocios comerciales, empresas corporativas y hogares prosperar con éxito.",
+	"INTRO_DESCRIPTION_3": "Ayudamos a los usuarios a vivir y trabajar con mayor <strong> confianza, efectividad y seguridad</strong>, facilitando así sus tareas digitales.",
+	"INTRO_DESCRIPTION_4": "La estabilidad y conocimiento en<strong> nuestros servicios, son pilares fundamentales</strong> para establecer relaciones duraderas con nuestros clientes.",
+	"INTRO_DESCRIPTION_5": "Creemos en el desarrollo y la comunidad como<strong> generadores de conectividad.</strong>",
+	"BENTO_TITLE_1": "Conectividad Robusta",
+	"BENTO_CONTENT_1": "Nos especializamos en proporcionar conexiones confiables y de alta velocidad, asegurando que su empresa opere sin interrupciones. Desde redes cableadas hasta soluciones inalámbricas, garantizamos una conectividad que impulsa la eficiencia.",
+	"BENTO_TITLE_2": "Servicios Administrados",
+	"BENTO_CONTENT_2": "Simplificamos la gestión de su entorno IT. Con monitoreo proactivo, soporte técnico y actualizaciones regulares, nuestros servicios administrados permiten que se enfoque en su negocio mientras cuidamos de su infraestructura tecnológica.",
+	"BENTO_TITLE_3": "Nube Segura",
+	"BENTO_CONTENT_3": "Transforme su almacenamiento y procesamiento de datos con nuestra nube segura. Ofrecemos soluciones escalables que protegen su información mediante protocolos avanzados de seguridad, permitiéndole acceder a sus recursos desde cualquier lugar.",
+	"BENTO_TITLE_4": "Infraestructura Empresarial",
+	"BENTO_CONTENT_4": "Diseñamos y implementamos una infraestructura robusta y escalable para respaldar el crecimiento de su empresa. Desde servidores hasta sistemas de almacenamiento, creamos bases sólidas que sustentan el éxito a largo plazo.",
+	"BENTO_TITLE_5": "Soluciones de Software",
+	"BENTO_CONTENT_5": "Desarrollamos aplicaciones y programas personalizados que se adaptan a las necesidades específicas de su empresa. Desde la automatización de procesos hasta herramientas de análisis, nuestras soluciones de software optimizan la productividad y mejoran la eficiencia operativa.",
+	
+	"CONTACT": "¡Contáctanos!",
+	"CONTACT_CONTENT": "Completa el formulario de contacto a continuación o utiliza la información de contacto proporcionada para comunicarte con nuestro equipo.",
+	
+	"NAME": "Nombre",
+	"PHONE": "Teléfono",
+	"MESSAGE": "Mensaje",
+	"SEND": "Enviar",
+	
+	"FOOTER": {
+		"DISCLAIMER": "Todos los derechos reservados. ",
+		"CONTENT": "Revolucionando tu empresa con soluciones tecnológicas integrales. Somos tu aliado de TIC para alcanzar tus objetivos. "
+		
+		
+	},
+
+
+	"ERROR_404": {
+		"TITLE": "Página no encontrada",
+		"BACK_HOMEPAGE_BTN": "Volver a la página de inicio"
+	}
 }

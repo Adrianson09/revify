@@ -18,7 +18,7 @@ const t = useTranslations(lang);
 const translatePath = useTranslatedPath(lang);
 ---
 
-<header id="header-nav" class="fixed top-0 w-full px-6 py-4 z-50">
+<header id="header-nav" class="fixed top-0 w-full px-6 py-2 z-50">
   <div class="max-w-7xl mx-auto flex items-center justify-between gap-16">
     <HeaderLink
       checkActive={false}
@@ -27,7 +27,7 @@ const translatePath = useTranslatedPath(lang);
       aria-label="Logo Revify"
     >
       <Logo
-        class="absolute w-12 m-auto blur-sm opacity-0 transition-opacity duration-300 hover:opacity-100"
+        class="absolute w-8 m-auto blur-sm opacity-0 transition-opacity duration-300 hover:opacity-100"
       />
       <Logo class="w-10" />
     </HeaderLink>
@@ -35,13 +35,13 @@ const translatePath = useTranslatedPath(lang);
       id="header-menu"
       class="fixed w-full h-dvh inset-0 bg-[#151a36]/90 md:text-xl lg:text-xl flex flex-col items-center justify-center gap-8 -translate-y-full transition-transform duration-300 target:translate-y-0 md:static md:h-[initial] md:bg-[initial] md:flex-row md:translate-y-[initial]"
     >
-      <HeaderLink class="text__glowing" href={translatePath('#nosotros')}>
+      <HeaderLink class="text__glowing" href={translatePath('/#nosotros')}>
         {t('nav.nosotros')}
       </HeaderLink>
-      <HeaderLink class="text__glowing" href={translatePath('#servicios')}>
+      <HeaderLink class="text__glowing" href={translatePath('/#servicios')}>
         {t('nav.servicios')}
       </HeaderLink>
-      <HeaderLink class="text__glowing" href={translatePath('#contacto')}>
+      <HeaderLink class="text__glowing" href={translatePath('/#contacto')}>
         {t('nav.contacto')}
       </HeaderLink>
       <LanguageSelector />
